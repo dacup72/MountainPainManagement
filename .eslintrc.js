@@ -2,5 +2,10 @@
 // ./node_modules/.bin/eslint yourfile.js
 
 module.exports = {
-    "extends": "eslint:recommended"
+    "extends": "standard",
+    "rules": {
+        "semi": ["error", "always"],
+        "quotes": ["error", "double"],
+        "no-unused-vars": ["error", { "vars": "local", "args": "none"}]
+    }
 };
